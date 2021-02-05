@@ -1,0 +1,259 @@
+@import "uti.css";
+:root {
+  --primary: #3dcfd3;
+  --dark: #696969;
+  --pure: #ffffff;
+  --tap: #898989;
+  --tip: #f2f2f2;
+  --secondary: #070606;
+  --light: #d3d3d3;
+}
+body {
+  font-family: sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-font-smotthing: antialiased;
+}
+header {
+  background: var(--dark);
+}
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+header nav .left a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+header nav .left a:hover {
+  color: #3dcfd3;
+}
+header nav {
+  padding: 2rem 0;
+}
+header nav .logo {
+  margin-right: 3rem;
+}
+.Myimage .image img {
+  width: 500px;
+}
+.Myimage .text {
+  color: var(--pure);
+}
+.Myimage .text h6 {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.Myimage .text h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.Myimage .text h1 span {
+  color: var(--primary);
+}
+.Myimage .text p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+section {
+  padding: 6rem 0;
+}
+section.about h1 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 400;
+}
+section.about h1 span {
+  color: var(--primary);
+}
+section.about h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+section.about p {
+  font-family: sans-serif;
+  color: var(--tap);
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+section.about .social {
+  display: flex;
+}
+section.about .social img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+section.about .social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+  transition: all 0.3s ease;
+}
+section.about .social a:hover {
+  background: var(--primary);
+}
+.heading {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 8rem;
+  line-height: 0.5;
+  font-size: 55px;
+}
+.heading span {
+  color: var(--primary);
+}
+section.services {
+  background: var(--light);
+}
+section.services .Allcards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 6rem;
+}
+section.services .Allcards .cards {
+  background: var(--pure);
+  padding: 3rem 2rem;
+  position: relative;
+  padding-top: 5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+section.services .Allcards .cards img {
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section.services .Allcards .cards h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+section.services .Allcards .cards p {
+  font-family: sans-serif;
+  color: var(--tap);
+}
+section.services .Allcards .cards:hover {
+  background: var(--secondary);
+}
+section.services .Allcards .cards:hover h2,
+section.services .Allcards .cards:hover p {
+  color: var(--pure);
+}
+.project_title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.project_title span {
+  color: var(--primary);
+}
+#projects .projects {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+#projects .project_header h1 {
+  margin-bottom: 50px;
+}
+#projects .all_project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#projects .project_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#projects .project_info {
+  padding: 30px;
+  flex-basis: 50%;
+  background: var(--dark);
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+#projects .project_info h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+#projects .project_info h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+#projects .project_info p {
+  color: var(--tip);
+  padding-top: 10px;
+}
+#projects .all_project {
+  background: var(--light);
+}
+.contact .heading h1 {
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+  font-weight: 400;
+  text-align: center;
+}
+.contact .container h1 span {
+  color: var(--primary);
+}
+section.contact .card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+section.contact .card_wrapper .card {
+  text-align: center;
+}
+section.contact .card_wrapper .card img {
+  margin-bottom: 3rem;
+}
+section.contact .card_wrapper .card h1 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+section.contact .card_wrapper .card h6 {
+  font-size: 1rem;
+  color: var(--tap);
+  font-weight: 400;
+}
+footer {
+  background: var(--light);
+  text-align: center;
+}
+footer .footer-social img {
+  width: 75px;
+  height: 75px;
+  padding: 0.5rem;
+}
